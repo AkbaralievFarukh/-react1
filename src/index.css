@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,89 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: 50%;
+  padding: 15px;
+}
+
+.box {
+
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card-img {
+  position: relative;
+  max-width: 250px;
+  border: 1px solid rgb(128, 128, 128);
+}
+
+.btn-cart {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  padding: 10px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.img-cart {
+  max-width: 30px;
+  width: 100%; /* Ensure the image takes up the full space within the button */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing around the image */
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-info__title {
+  font-size: 24px;
+}
+
+.card-info__desc {
+  font-size: 14px;
+}
+
+.rates {
+  max-width: 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
 }
